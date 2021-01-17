@@ -1,0 +1,481 @@
+@font-face {
+  font-family: "futuralight";
+  src: url("fonts/futura/futura/futura-light-bt.ttf") format("truetype"),
+    url("fonts/futura/futura/futura medium bt.ttf") format("truetype"),
+    url("fonts/futura/futura/Futura Heavy font.ttf") format("truetype"),
+    url("fonts/futura/futura/Futura Book font.ttf") format("truetype"),
+    url("fonts/futura/futura/Futura Extra Black font.ttf") format("truetype");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "futuralight", sans-serif;
+}
+
+.footer-content-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "footer-content";
+  height: auto;
+  margin: 0 15rem;
+}
+
+.footer-content {
+  grid-area: footer-content;
+}
+.footer-content .box {
+  display: flex;
+  justify-content: space-around;
+  padding: 4rem 0;
+  text-align: center;
+}
+.footer-content.box .box__content {
+  font-size: 14px;
+}
+.footer-content .box .box__content img {
+  height: 2rem;
+}
+.footer-content .box .box__content p {
+  margin-top: 25px;
+  font-size: 27px;
+}
+.footer-content .text-description {
+  text-align: center;
+}
+.footer-content .text-description h5 {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold !important;
+}
+.footer-content .text-description p {
+  display: none;
+  margin-top: 10px;
+}
+.footer-content .text-description a {
+  cursor: pointer;
+}
+
+.footer-content .text-description i {
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+.mailBox {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.text__mailBox h3 {
+  font-size: 27.35px;
+  font-weight: lighter !important;
+  text-align: center;
+}
+.text__mailBox p {
+  font-size: 16px;
+  text-align: center;
+}
+.mailBox__mail {
+  width: 500px;
+}
+
+.mailBox__input {
+  padding: 10px 0;
+  display: flex;
+}
+.mailBox__check {
+  display: inline-flex;
+
+  align-items: flex-start;
+  width: 500px;
+}
+.mailBox__check label {
+  font-size: 0.8rem;
+}
+.mailBox__check input {
+  margin-right: 5px;
+}
+#email {
+  height: 2.3rem;
+  width: 25rem;
+  padding: 10px 5px;
+  font-size: 18px;
+  margin: 0;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 0;
+  border: 0.1px solid grey;
+}
+#send {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 9px 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 200ms color ease-in;
+}
+#send:hover {
+  color: yellowgreen;
+}
+
+/* ------------------------------------------------------ */
+.menu-container {
+  display: grid;
+  grid-template-columns: 1fr, 1fr, 1fr, 1fr, 0.1fr, 1.4fr, 1.4fr;
+  grid-template-rows: 0.1fr, 0.1fr, 0.1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "category-caption category-caption corporate-caption sss-caption bos bos bos"
+    "menu-category menu-category2 menu-corporate menu-sss hr-yeri bize-ulasin mobile-app"
+    "menu-category menu-category2 menu-corporate menu-sss hr-yeri telefon telefon";
+  height: auto;
+  margin: 1rem 15rem 1rem 15rem;
+}
+.category-caption {
+  grid-area: category-caption;
+
+  display: flex;
+  align-items: flex-end;
+  padding: 10px 0 0 0;
+}
+.menu-category {
+  grid-area: menu-category;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 8px 0;
+  display: block;
+  transition: 200ms ease-in;
+}
+li:hover {
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+}
+.category-caption h5 {
+  letter-spacing: 0.05em;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.menu-category2 {
+  grid-area: menu-category2;
+}
+
+.corporate-caption {
+  grid-area: corporate-caption;
+
+  display: flex;
+  align-items: flex-end;
+  padding: 10px 0 0 0;
+}
+.corporate-caption h5 {
+  letter-spacing: 0.05em;
+  font-size: 20px;
+}
+.menu-corporate {
+  grid-area: menu-corporate;
+}
+
+.sss-caption {
+  grid-area: sss-caption;
+  display: flex;
+  align-items: flex-end;
+  padding: 10px 0 0 0;
+}
+.sss-caption h5 {
+  letter-spacing: 0.05em;
+  font-size: 20px;
+}
+.menu-sss {
+  grid-area: menu-sss;
+}
+
+/* ------------------------------------------------------ */
+.hr-yeri {
+  grid-area: hr-yeri;
+}
+.dikey {
+  border: 0;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  height: 20rem;
+}
+
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+/* ------------------------------------------------------ */
+.bize-ulasin {
+  grid-area: bize-ulasin;
+  text-align: center;
+  padding: 20px 0 0 0;
+}
+.bize-ulasin h3 {
+  font-weight: 800;
+  font-size: 20px;
+}
+.bize-ulasin .sosyal-medya {
+  list-style-type: none;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.bize-ulasin .sosyal-medya li {
+  width: 35px;
+  height: 35px;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 8px;
+}
+.bize-ulasin .sosyal-medya li a {
+  color: #000;
+}
+.bize-ulasin .sosyal-medya li:hover {
+  background: black;
+}
+.bize-ulasin .sosyal-medya li:hover a {
+  color: white;
+}
+/* ------------------------------------------------------ */
+.mobile-app {
+  grid-area: mobile-app;
+  text-align: center;
+  padding: 20px 0 0 0;
+}
+.mobile-app h3 {
+  font-weight: 800;
+  font-size: 20px;
+}
+.mobile-app .app {
+  list-style-type: none;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.mobile-app .app li {
+  margin-right: 8px;
+}
+.mobile-app .app li a img {
+  width: 6rem;
+  height: 2rem;
+}
+
+.telefon {
+  grid-area: telefon;
+  text-align: center;
+}
+.telefon h3 {
+  font-weight: 800;
+  font-size: 20px;
+}
+.telefon img {
+  margin-top: 10px;
+  height: 3rem;
+}
+
+.bos {
+  grid-area: bos;
+}
+
+/* ------------------------------------------------------ */
+.gizlilik-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.1fr;
+  gap: 0px 0px;
+  grid-template-areas: "gizlilik";
+  height: auto;
+  margin: 0 15rem 0 15rem;
+}
+
+.gizlilik {
+  grid-area: gizlilik;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin-right: 20px;
+}
+.gizlilik p {
+  margin-right: 4rem;
+  font-size: 14px;
+}
+
+/* ------------------------------------------------------ */
+.bank-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.1fr;
+  gap: 0px 0px;
+  grid-template-areas: "bank-icons";
+  height: auto;
+  margin: 0 15rem 0 15rem;
+}
+.bank-icons {
+  grid-area: bank-icons;
+  display: flex;
+  justify-content: start;
+  padding: 10px;
+  margin-right: 20px;
+}
+.bank-icons img {
+  margin-right: 10px;
+  height: 20px;
+}
+
+/* Media Query Phone-Tablet-Desktop... */
+
+@media (max-width: 576px) {
+  .footer-content-container {
+    margin: 10px;
+  }
+  .footer-content .box {
+    display: block;
+    width: 40rem;
+    margin: 0;
+    padding: 0;
+  }
+  .box__content {
+    margin: 10rem 0;
+  }
+  .footer-content .box .box__content img {
+    height: 4rem;
+  }
+  .footer-content .box .box__content p {
+    margin-top: 25px;
+    font-size: 2.5rem;
+  }
+  .footer-content .text-description h5 {
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  .footer-content .text-description p {
+    display: none;
+    margin-top: 1rem;
+    padding: 0 2rem;
+    font-size: 2rem;
+    text-align: justify;
+  }
+  .footer-content .text-description i {
+    margin-top: 10px;
+    font-size: 3rem;
+  }
+  .mailBox {
+    padding: 0;
+    margin-top: 1rem;
+  }
+  .text__mailBox h3 {
+    font-size: 2.5rem;
+  }
+  .text__mailBox p {
+    font-size: 1.7rem;
+  }
+  .mailBox__check label {
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+
+  .menu-container {
+    display: block;
+
+    width: 38rem;
+    margin: 10px;
+    padding-left: 10px;
+  }
+  .category-caption h5 {
+    font-size: 2rem;
+  }
+  ul {
+    margin-bottom: 2rem;
+  }
+  li {
+    font-size: 2rem;
+  }
+  hr {
+    width: 38rem;
+  }
+  .category-caption {
+    display: block;
+    width: 38rem;
+  }
+  .corporate-caption h5 {
+    margin-top: 3rem;
+    font-size: 2rem;
+  }
+  .sss-caption h5 {
+    margin-top: 3rem;
+    font-size: 2rem;
+  }
+  .dikey {
+    height: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-left: 0;
+  }
+
+  .bize-ulasin h3 {
+    font-size: 2.5rem;
+  }
+  .bize-ulasin .sosyal-medya li {
+    width: 100px;
+    height: 100px;
+    padding-top: 1.3rem;
+    font-size: 3rem;
+  }
+  .mobile-app h3 {
+    font-size: 2.5rem;
+  }
+  .mobile-app .app li a img {
+    width: 15rem;
+    height: 5rem;
+  }
+  .telefon h3 {
+    font-size: 2.5rem;
+  }
+  .telefon i {
+    margin: 2rem 0;
+    font-size: 5rem;
+  }
+  .gizlilik-container {
+    width: 38rem;
+    margin-left: 3rem;
+  }
+  .gizlilik {
+    padding: 10px 0;
+    margin: 0;
+  }
+  .gizlilik p {
+    font-size: 1.2rem;
+    margin-right: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 1200px) {
+}
